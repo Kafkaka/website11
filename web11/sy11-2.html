@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sy11-2</title>
+    <script>
+        function deliver(){
+            let list = document.getElementsByTagName('ul')[0];
+            let otext=document.getElementById('text');
+            let ovalue=otext.value;
+            list.innerHTML+='<li>'+ovalue+'</li>';
+
+        }
+    </script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        li{
+            list-style: none;
+        }
+        #wrap{
+            width:500px;
+            height:300px;
+            margin:100px auto;
+        }
+        textarea{
+            width:100%;
+            height:150px;
+        }
+        #btn{
+            width:80px;
+            height:30px;
+            float:right;
+            cursor: pointer;
+        }
+        li{
+            width:100%;
+            height:20px;
+            border-bottom: 1px solid black;
+            margin-top:20px;
+            padding-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <textarea name="text" id="text"></textarea>
+    <input id="btn" type="button" value="提交" onclick='deliver()'/>
+    <ul>
+
+    </ul>
+</div>
+
+</body>
+</html>

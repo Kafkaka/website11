@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sy11-1</title>
+
+    <style>
+
+        div{
+            height:100px;
+            width:300px;
+            margin:30px auto;
+            background-color: #3c74a2;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="block1">
+我是block1
+</div>
+<div id="block2">
+我是block2
+</div>
+<script>
+    let b1=document.getElementById('block1');
+    let b2=document.getElementById('block2');
+    b1.onmouseenter=function(){
+        b2.innerHTML="鼠标经过了block1";
+    }
+    b1.onmouseleave=function(){
+        b2.innerHTML="鼠标离开了block1";
+    }
+    b2.onmouseenter=function(){
+        b1.innerHTML="鼠标经过了block2";
+    }
+    b2.onmouseleave=function(){
+        b1.innerHTML="鼠标离开了block2";
+    }
+</script>
+</body>
+</html>

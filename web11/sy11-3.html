@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sy11-3</title>
+    <style>
+        #container{
+            width:400px;
+            height:400px;
+            margin:20px auto;
+        }
+        img{
+            width:400px;
+            height:400px;
+            display: block;
+            cursor: pointer;
+        }
+        #img2{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<div id="container">
+    <img id="img1" src="images/1.GIF">
+    <img id="img2" src="images/2.GIF">
+</div>
+<script>
+
+    let image1=document.getElementById('img1');
+    let image2=document.getElementById('img2');
+    image1.onclick=function(){
+        image1.style.display='none';
+        image2.style.display='block';
+    }
+    image2.onclick=function(){
+        image2.style.display='none';
+        image1.style.display='block';
+    }
+</script>
+</body>
+</html>
